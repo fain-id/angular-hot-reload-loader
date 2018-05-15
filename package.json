@@ -1,6 +1,6 @@
 {
   "name": "angular-hot-reload-loader",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
@@ -17,8 +17,9 @@
     "name": "Tan Bo",
     "email": "464328895@qq.com"
   },
-  "license": "Apache License 2.0",
+  "license": "MIT",
   "dependencies": {
+    "loader-utils": "^1.1.0"
   },
   "engines": {
     "node": ">=v6.4.0"
