@@ -15,7 +15,7 @@ module.exports = function angularHotReloadLoader(source, sourcemap) {
         if (this.resourcePath === resourcePath || this.resourcePath === resourcePath + '.ts') {
             var reg = new RegExp('class\\s+' + moduleName + '\\s*\\{', 'gm');
             var imports = 'import { removeNgStyles, createNewHosts, createInputTransfer } from \'@angularclass/hmr\';\n';
-            newSource = imports + source.replace(/\{([^}]|\n)(?=\}\s*from\s+['"]@angular\/core['"])/g, function (str) {
+            newSource = imports + source.replace(/\{([^}]|\n)*(?=\}\s*from\s+['"]@angular\/core['"])/g, function (str) {
                 if (!/ApplicationRef/.test(str)) {
                     return str + ', ApplicationRef ';
                 }
