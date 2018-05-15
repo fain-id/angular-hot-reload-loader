@@ -1,7 +1,7 @@
 # angular-hot-reload-loader
 
 ```bash
-npm i @angularclass/hmr angular-hot-relaod-loader -D
+npm i @angularclass/hmr angular-hot-reload-loader -D
 ```
 
 ```js
